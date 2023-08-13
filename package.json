@@ -1,0 +1,31 @@
+{
+  "name": "inflexionai",
+  "version": "1.0.0",
+  "description": "A test project",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch server --inspect server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcalahi/inflexionai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcalahi/inflexionai/issues"
+  },
+  "homepage": "https://github.com/jcalahi/inflexionai#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "lorem-ipsum": "^2.0.8",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^3.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
