@@ -7,6 +7,7 @@ const router = express.Router();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(bodyParser.text());
 
 app.use((req, res, next) => {
   res.setHeader("Content-Type", "application/json");
