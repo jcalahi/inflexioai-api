@@ -7,7 +7,7 @@ const upload = multer();
 
 const fileUpload = async (req, res, next) => {
   try {
-    await fs.writeFile("server/audio/recording.webm", req.file.buffer, {
+    await fs.writeFile("src/audio/recording.webm", req.file.buffer, {
       flag: "w+",
     });
     return res.json({ filename: "recording.webm" });
