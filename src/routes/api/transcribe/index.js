@@ -16,7 +16,7 @@ const transcribeAudio = async (req, res, next) => {
 
     const openai = new OpenAIApi(configuration);
     const { data } = await openai.createTranscription(
-      createReadStream(`server/audio/${fileName}`),
+      createReadStream(`src/audio/${fileName}`),
       "whisper-1"
     );
 
